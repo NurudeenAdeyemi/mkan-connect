@@ -117,7 +117,38 @@ function getBotResponse(message) {
 }
 
 if (chatSendBtn) {
-    chatSendBtn.addEventListener('click', () => {
+    const sendMessage = () => {
+        const message = chatInput.value.trim();
+        if (message) {
+            addMessage(message, 'user');
+            chatInput.value = '';
+            setTimeout(() => {
+                const botResponse = getBotResponse(message);
+                addMessage(botResponse, 'bot');
+            }, 500);
+        }
+    };
+
+    chatSendBtn.addEventListener('click', sendMessage);
+    chatSendBtn.addEventListener('touchend', (e) => {
+        e.preventDefault();
+        sendMessage();
+    });
+
+    chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+}
+
+if (chatInput) {
+    chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            chatSendBtn.click();
+        }
+    });
+}
         const message = chatInput.value.trim();
         if (message) {
             addMessage(message, 'user');
