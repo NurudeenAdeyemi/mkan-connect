@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKAN Connect - Apps</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="theme-toggle">
+        <label class="toggle-switch">
+            <input type="checkbox" id="theme-toggle-checkbox">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="apps-header">
+        <a href="home.html"><i class="material-icons">home</i></a>
+        <a href="home.html"><i class="material-icons">close</i></a>
+    </div>
+    <div class="apps-container">
+        <div class="search-bar">
+            <i class="material-icons">search</i>
+            <input type="text" id="app-search" placeholder="Search apps...">
+        </div>
+        <div class="apps-section">
+            <h3>Member Services</h3>
+            <div class="apps-grid">
+                <div class="app-item">Profile Management</div>
+                <div class="app-item">Member Directory</div>
+                <div class="app-item">ID Card Management</div>
+            </div>
+        </div>
+        <div class="apps-section">
+            <h3>Events & Competitions</h3>
+            <div class="apps-grid">
+                <div class="app-item">Event & Meeting Management</div>
+                <div class="app-item">National Competition Management</div>
+            </div>
+        </div>
+        <div class="apps-section">
+            <h3>Communication</h3>
+            <div class="apps-grid">
+                <div class="app-item">Communication Hub</div>
+                <div class="app-item">Polls & Surveys</div>
+            </div>
+        </div>
+        <div class="apps-section">
+            <h3>Support</h3>
+            <div class="apps-grid">
+                <div class="app-item">Helpdesk</div>
+            </div>
+        </div>
+        <div class="apps-section">
+            <h3>Resources</h3>
+            <div class="apps-grid">
+                <div class="app-item">Resource Library</div>
+            </div>
+        </div>
+        <div class="apps-section">
+            <h3>Administration</h3>
+            <div class="apps-grid">
+                <div class="app-item">Admin Panel</div>
+            </div>
+        </div>
+    </div>
+    <div id="chat-assistant" class="chat-icon">
+        <i class="material-icons">chat</i>
+    </div>
+    <div id="chat-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Solo Assistant</h3>
+            <p>Start a conversation</p>
+            <input type="text" placeholder="Type your message...">
+        </div>
+    </div>
+    <script src="apps.js"></script>
+</body>
+</html>

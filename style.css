@@ -1,0 +1,440 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+}
+
+body.light-mode {
+    background: #fff;
+    color: #000;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#app {
+    width: 100%;
+}
+
+.page {
+    width: 100%;
+}
+
+/* Login Page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    width: 380px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+body.light-mode .login-box {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.login-box h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+.login-box h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.login-box p {
+    color: #888;
+    margin: 0 0 30px;
+}
+
+body.light-mode .login-box p {
+    color: #555;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+body.light-mode .input-group label {
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body.light-mode .input-group input {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    color: #000;
+}
+
+#login-btn {
+    width: 100%;
+    background-color: #006400;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.help-link {
+    color: #006400;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    margin-right: 20px;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #006400;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Dashboard Page */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1E1E1E;
+}
+
+body.light-mode .dashboard-header {
+    background-color: #f5f5f5;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #006400;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.dashboard-content {
+    padding: 40px;
+    text-align: center; /* Centered the content */
+}
+
+.welcome-message h2 {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+.welcome-message p {
+    color: #888;
+    font-size: 18px;
+}
+
+.suggested-actions h3, .recent-activity h3 {
+    font-size: 24px;
+    margin: 40px 0 20px;
+    text-align: left;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.action-card {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+body.light-mode .action-card {
+    background-color: #f5f5f5;
+}
+
+.action-card h4 {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.action-card p {
+    color: #888;
+    margin: 0;
+}
+
+.recent-activity .activity-item {
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+body.light-mode .recent-activity .activity-item {
+    background-color: #f5f5f5;
+}
+
+.activity-tag {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.activity-tag.contact {
+    background-color: #8A2BE2;
+}
+
+.activity-tag.deal {
+    background-color: #006400;
+}
+
+.activity-tag.event {
+    background-color: #ffA500;
+}
+
+.activity-tag.message {
+    background-color: #0000ff;
+}
+
+.activity-description {
+    flex-grow: 1;
+}
+
+.activity-time {
+    color: #888;
+    margin-right: 20px;
+}
+
+.activity-status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.activity-status.new {
+    background-color: #8A2BE2;
+}
+
+.activity-status.negotiation {
+    background-color: #006400;
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #1E1E1E;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+body.light-mode .modal-content {
+    background-color: #f5f5f5;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Apps Modal */
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.app-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Chat Assistant */
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #006400;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#chat-modal .modal-content {
+    width: 400px;
+}
+
+.user-menu .material-icons {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Apps Page */
+.apps-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.apps-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body.light-mode .apps-header a {
+    color: #000;
+}
+
+.apps-container {
+    padding: 40px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+body.light-mode .search-bar {
+    background-color: #f5f5f5;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+body.light-mode .search-bar input {
+    color: #000;
+}
+
+.apps-section h3 {
+    font-size: 24px;
+    margin: 40px 0 20px;
+}

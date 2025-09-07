@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKAN Connect - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div id="dashboard-page" class="page">
+        <div class="dashboard-header">
+            <div class="logo">MKAN Connect</div>
+            <div class="user-menu">
+                <div class="theme-toggle">
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="theme-toggle-checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <i class="material-icons" id="apps-icon">apps</i>
+                <div class="user-avatar">NA</div>
+            </div>
+        </div>
+        <div class="dashboard-content">
+            <div class="welcome-message">
+                <h2>Hi Nurudeen Adeyemi! 👋</h2>
+                <p>What would you like to do today?</p>
+            </div>
+            <div class="suggested-actions">
+                <h3>Suggested Actions</h3>
+                <div class="actions-grid">
+                    <div class="action-card" data-target="profile">
+                        <h4>View Profile</h4>
+                        <p>View and edit your profile</p>
+                    </div>
+                    <div class="action-card" data-target="directory">
+                        <h4>Search Members</h4>
+                        <p>Find other members</p>
+                    </div>
+                    <div class="action-card" data-target="id-card">
+                        <h4>ID Card Request</h4>
+                        <p>Request a new ID card</p>
+                    </div>
+                    <div class="action-card" data-target="helpdesk">
+                        <h4>Helpdesk</h4>
+                        <p>Submit a support ticket</p>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-activity">
+                <h3>Recent Activity</h3>
+                <div class="activity-item">
+                    <div class="activity-tag event">Event</div>
+                    <div class="activity-description">You have registered for the Annual General Meeting</div>
+                    <div class="activity-time">1 day ago</div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-tag message">Message</div>
+                    <div class="activity-description">New message from John Doe</div>
+                    <div class="activity-time">2 days ago</div>
+                </div>
+            </div>
+        </div>
+        <div id="apps-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <div class="apps-grid">
+                    <div class="app-item">Accounts</div>
+                    <div class="app-item">Orders</div>
+                    <div class="app-item">Products</div>
+                    <div class="app-item">Services</div>
+                    <div class="app-item">Configuration</div>
+                </div>
+            </div>
+        </div>
+        <div id="chat-assistant" class="chat-icon">
+            <i class="material-icons">chat</i>
+        </div>
+        <div id="chat-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Solo Assistant</h3>
+                <p>Start a conversation</p>
+                <input type="text" placeholder="Type your message...">
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
