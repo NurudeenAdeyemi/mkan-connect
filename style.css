@@ -351,8 +351,8 @@ body.light-mode .modal-content {
 /* Apps Modal */
 .apps-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
 }
 
 .app-item {

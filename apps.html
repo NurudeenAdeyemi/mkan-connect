@@ -6,6 +6,33 @@
     <title>MKAN Connect - Apps</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        /* Member Services */
+        .apps-container > div:nth-child(2) .app-item:nth-child(1) { background: #e57373; }
+        .apps-container > div:nth-child(2) .app-item:nth-child(2) { background: #ba68c8; }
+        .apps-container > div:nth-child(2) .app-item:nth-child(3) { background: #9575cd; }
+
+        /* Events & Competitions */
+        .apps-container > div:nth-child(3) .app-item:nth-child(1) { background: #7986cb; }
+        .apps-container > div:nth-child(3) .app-item:nth-child(2) { background: #64b5f6; }
+
+        /* Communication */
+        .apps-container > div:nth-child(4) .app-item:nth-child(1) { background: #4fc3f7; }
+        .apps-container > div:nth-child(4) .app-item:nth-child(2) { background: #4dd0e1; }
+
+        /* Support */
+        .apps-container > div:nth-child(5) .app-item:nth-child(1) { background: #4db6ac; }
+
+        /* Resources */
+        .apps-container > div:nth-child(6) .app-item:nth-child(1) { background: #81c784; }
+
+        /* Administration */
+        .apps-container > div:nth-child(7) .app-item:nth-child(1) { background: #aed581; }
+        .app-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
 </head>
 <body>
     <div class="theme-toggle">
@@ -26,41 +53,41 @@
         <div class="apps-section">
             <h3>Member Services</h3>
             <div class="apps-grid">
-                <div class="app-item"><i class="material-icons">person</i><span>Profile Management</span></div>
-                <div class="app-item"><i class="material-icons">group</i><span>Member Directory</span></div>
-                <div class="app-item"><i class="material-icons">credit_card</i><span>ID Card Management</span></div>
+                <a href="profile/index.html" class="app-link"><div class="app-item"><i class="material-icons">person</i><span>Profile Management</span></div></a>
+                <a href="directory/index.html" class="app-link"><div class="app-item"><i class="material-icons">group</i><span>Member Directory</span></div></a>
+                <a href="idcard/index.html" class="app-link"><div class="app-item"><i class="material-icons">credit_card</i><span>ID Card Management</span></div></a>
             </div>
         </div>
         <div class="apps-section">
             <h3>Events & Competitions</h3>
             <div class="apps-grid">
-                <div class="app-item"><i class="material-icons">event</i><span>Event & Meeting Management</span></div>
-                <div class="app-item"><i class="material-icons">emoji_events</i><span>National Competition Management</span></div>
+                <a href="events/index.html" class="app-link"><div class="app-item"><i class="material-icons">event</i><span>Event & Meeting Management</span></div></a>
+                <a href="competitions/index.html" class="app-link"><div class="app-item"><i class="material-icons">emoji_events</i><span>National Competition Management</span></div></a>
             </div>
         </div>
         <div class="apps-section">
             <h3>Communication</h3>
             <div class="apps-grid">
-                <div class="app-item"><i class="material-icons">chat</i><span>Communication Hub</span></div>
-                <div class="app-item"><i class="material-icons">poll</i><span>Polls & Surveys</span></div>
+                <a href="communication/index.html" class="app-link"><div class="app-item"><i class="material-icons">chat</i><span>Communication Hub</span></div></a>
+                <a href="polls/index.html" class="app-link"><div class="app-item"><i class="material-icons">poll</i><span>Polls & Surveys</span></div></a>
             </div>
         </div>
         <div class="apps-section">
             <h3>Support</h3>
             <div class="apps-grid">
-                <div class="app-item"><i class="material-icons">help</i><span>Helpdesk</span></div>
+                <a href="helpdesk/index.html" class="app-link"><div class="app-item"><i class="material-icons">help</i><span>Helpdesk</span></div></a>
             </div>
         </div>
         <div class="apps-section">
             <h3>Resources</h3>
             <div class="apps-grid">
-                <div class="app-item"><i class="material-icons">folder</i><span>Resource Library</span></div>
+                <a href="resources/index.html" class="app-link"><div class="app-item"><i class="material-icons">folder</i><span>Resource Library</span></div></a>
             </div>
         </div>
         <div class="apps-section">
             <h3>Administration</h3>
             <div class="apps-grid">
-                <div class="app-item"><i class="material-icons">admin_panel_settings</i><span>Admin Panel</span></div>
+                <a href="admin/index.html" class="app-link"><div class="app-item"><i class="material-icons">admin_panel_settings</i><span>Admin Panel</span></div></a>
             </div>
         </div>
     </div>
