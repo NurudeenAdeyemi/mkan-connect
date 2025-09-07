@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +28,48 @@
         <a href="#"><i class="material-icons">account_tree</i><span>Directory Tree</span></a>
     </div>
     <div class="app-content">
-        <div class="welcome-message">
-            <h2>Member Directory</h2>
-            <p>This is the page for Member Directory.</p>
+        <div class="directory-controls">
+            <div class="search-bar">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Search members...">
+            </div>
+            <div class="filter-options">
+                <select>
+                    <option>All Levels</option>
+                    <option>National</option>
+                    <option>Region</option>
+                    <option>State</option>
+                    <option>Dila</option>
+                    <option>Muqam</option>
+                </select>
+                <select>
+                    <option>All Units</option>
+                    <option>Unit 1</option>
+                    <option>Unit 2</option>
+                </select>
+            </div>
+        </div>
+        <div class="member-list">
+            <div class="member-card">
+                <div class="profile-pic"><img src="https://i.pravatar.cc/80?u=1" alt="Profile Picture"></div>
+                <h3>Member Name 1</h3>
+                <p>Unit 1</p>
+            </div>
+            <div class="member-card">
+                <div class="profile-pic"><img src="https://i.pravatar.cc/80?u=2" alt="Profile Picture"></div>
+                <h3>Member Name 2</h3>
+                <p>Unit 2</p>
+            </div>
+            <div class="member-card">
+                <div class="profile-pic"><img src="https://i.pravatar.cc/80?u=3" alt="Profile Picture"></div>
+                <h3>Member Name 3</h3>
+                <p>Unit 1</p>
+            </div>
+            <div class="member-card">
+                <div class="profile-pic"><img src="https://i.pravatar.cc/80?u=4" alt="Profile Picture"></div>
+                <h3>Member Name 4</h3>
+                <p>Unit 2</p>
+            </div>
         </div>
     </div>
     <div id="chat-assistant" class="chat-icon">
@@ -42,9 +82,11 @@
                 <span class="close-btn">&times;</span>
             </div>
             <div class="chat-body">
-                <i class="material-icons chat-icon-large">chat</i>
-                <h2>Start a conversation</h2>
-                <p>Ask me anything about MKAN Connect or how I can help you today.</p>
+                <div class="chat-initial-message">
+                    <i class="material-icons chat-icon-large">chat</i>
+                    <h2>Start a conversation</h2>
+                    <p>Ask me anything about MKAN Connect or how I can help you today.</p>
+                </div>
             </div>
             <div class="chat-input">
                 <input type="text" placeholder="Type your message...">
