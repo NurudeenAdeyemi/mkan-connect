@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,14 +9,110 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div class="apps-header">
-        <a href="../home.html"><i class="material-icons">home</i></a>
-        <a href="../apps.html"><i class="material-icons">apps</i></a>
+    <div class="dashboard-header">
+        <div class="logo">MKAN Connect</div>
+        <div class="user-menu">
+            <div class="theme-toggle">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="theme-toggle-checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <a href="../apps.html" style="color: inherit;"><i class="material-icons" id="apps-icon">apps</i></a>
+            <div class="user-avatar">NA</div>
+        </div>
     </div>
-    <div class="dashboard-content">
-        <div class="welcome-message">
-            <h2>Profile Management</h2>
-            <p>This is the page for Profile Management.</p>
+    <div class="top-menu">
+        <a href="#" class="active"><i class="material-icons">dashboard</i><span>Dashboard</span></a>
+        <a href="#"><i class="material-icons">edit</i><span>Edit Profile</span></a>
+        <a href="#"><i class="material-icons">settings</i><span>Settings</span></a>
+    </div>
+    <div class="app-content">
+        <div class="breadcrumb">
+            <a href="#">Dashboard</a>
+            <span>&bull;</span>
+            <a href="#">Members</a>
+            <span>&bull;</span>
+            <span>Maroof Bolaji Abdul Kareem</span>
+        </div>
+        <div class="profile-header">
+            <div class="profile-pic">M</div>
+            <div class="profile-info">
+                <h2>Maroof Bolaji Abdul Kareem</h2>
+                <p>41337</p>
+            </div>
+            <div class="profile-actions">
+                <button>Edit <i class="material-icons">edit</i></button>
+                <button class="refresh">Refresh <i class="material-icons">refresh</i></button>
+            </div>
+        </div>
+        <div class="profile-content">
+            <div class="org-hierarchy">
+                <div class="org-level">
+                    <i class="material-icons">mosque</i>
+                    <h3>Orisumbare</h3>
+                    <p>Muqami</p>
+                </div>
+                <div class="org-level">
+                    <i class="material-icons">mosque</i>
+                    <h3>Omi-Adio</h3>
+                    <p>Dil'a</p>
+                </div>
+                <div class="org-level">
+                    <i class="material-icons">mosque</i>
+                    <h3>Oyo</h3>
+                    <p>Ilaqa</p>
+                </div>
+                <div class="org-level">
+                    <i class="material-icons">public</i>
+                    <h3>South West</h3>
+                    <p>Region</p>
+                </div>
+            </div>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>Basic Information</h3>
+                    <div class="info-row">
+                        <span class="label">Address:</span>
+                        <span>Ahmadiyya Muslim Jamaat Nigeria</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Email:</span>
+                        <span>mafkeem@gmail.com</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Phone:</span>
+                        <span>08057016308</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Date of Birth:</span>
+                        <span>1984-12-21</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Marital Status:</span>
+                        <span>Married</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Nationality:</span>
+                        <span>Nigerian</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Profession:</span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Jama'at Information</h3>
+                    <div class="info-row">
+                        <span class="label">Chanda Number:</span>
+                        <span>41337</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="label">Wasiyyat Number:</span>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="chat-assistant" class="chat-icon">

@@ -8,11 +8,25 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <div class="apps-header">
-        <a href="../home.html"><i class="material-icons">home</i></a>
-        <a href="../apps.html"><i class="material-icons">apps</i></a>
+    <div class="dashboard-header">
+        <div class="logo">MKAN Connect</div>
+        <div class="user-menu">
+            <div class="theme-toggle">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="theme-toggle-checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <a href="../apps.html" style="color: inherit;"><i class="material-icons" id="apps-icon">apps</i></a>
+            <div class="user-avatar">NA</div>
+        </div>
     </div>
-    <div class="dashboard-content">
+    <div class="top-menu">
+        <a href="#" class="active"><i class="material-icons">poll</i><span>Active Polls</span></a>
+        <a href="#"><i class="material-icons">add_chart</i><span>Create Poll</span></a>
+        <a href="#"><i class="material-icons">bar_chart</i><span>Results</span></a>
+    </div>
+    <div class="app-content">
         <div class="welcome-message">
             <h2>Polls & Surveys</h2>
             <p>This is the page for Polls & Surveys.</p>
