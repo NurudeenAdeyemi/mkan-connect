@@ -356,10 +356,24 @@ body.light-mode .modal-content {
 }
 
 .app-item {
-    background-color: #2a2a2a;
-    padding: 20px;
-    border-radius: 10px;
+    background: linear-gradient(to bottom right, #8A2BE2, #006400);
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+}
+
+.app-item i {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.app-item span {
+    font-size: 12px;
 }
 
 /* Chat Assistant */
