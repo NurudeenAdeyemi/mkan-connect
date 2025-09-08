@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKAN Connect - Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="dashboard-header">
+        <div class="logo">MKAN Connect</div>
+        <div class="user-menu">
+            <div class="theme-toggle">
+                <label class="toggle-switch">
+                    <input type="checkbox" id="theme-toggle-checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <a href="apps.html" style="color: inherit;"><i class="material-icons" id="apps-icon">apps</i></a>
+            <div class="user-avatar">NA</div>
+        </div>
+    </div>
+    <div class="top-menu">
+        <a href="communication/index.html"><i class="material-icons">arrow_back</i><span>Back</span></a>
+    </div>
+    <div class="app-content">
+        <div class="chat-container">
+            <div class="chat-body">
+                <div class="chat-initial-message">
+                    <i class="material-icons chat-icon-large">chat</i>
+                    <h2>Start a conversation</h2>
+                    <p>Ask me anything about MKAN Connect or how I can help you today.</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <i class="material-icons">mic</i>
+                <i class="material-icons">send</i>
+            </div>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>
