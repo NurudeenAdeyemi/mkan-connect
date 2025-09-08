@@ -49,11 +49,16 @@ if (closeBtns) {
 
 if (chatModal) {
     chatModal.addEventListener('click', (e) => {
+        console.log('chatModal clicked', e.target);
         if (e.target == chatModal) {
             chatModal.classList.add('hidden');
         }
     });
 }
+
+window.addEventListener('click', (e) => {
+    console.log('window clicked', e.target);
+});
 
 function addMessage(message, sender) {
     const initialMessage = document.querySelector('.chat-initial-message');
@@ -118,6 +123,7 @@ function getBotResponse(message) {
 
 if (chatSendBtn) {
     const sendMessage = () => {
+        console.log('sendMessage called');
         const message = chatInput.value.trim();
         if (message) {
             addMessage(message, 'user');
@@ -129,7 +135,15 @@ if (chatSendBtn) {
         }
     };
 
-    chatSendBtn.addEventListener('click', sendMessage);
+    chatSendBtn.addEventListener('click', (e) => {
+        console.log('chatSendBtn clicked');
+        // Visual feedback for debugging
+        chatSendBtn.style.backgroundColor = 'red';
+        setTimeout(() => {
+            chatSendBtn.style.backgroundColor = ''; // Revert to original color
+        }, 200);
+        sendMessage();
+    });
 
     chatInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
