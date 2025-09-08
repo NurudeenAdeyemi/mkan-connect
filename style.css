@@ -398,7 +398,7 @@ body.light-mode .modal-content {
     z-index: 1001;
 }
 
-#chat-modal .modal-content {
+/* #chat-modal .modal-content {
     width: 90%;
     max-width: 800px;
     height: 80%;
@@ -480,7 +480,7 @@ body.light-mode .modal-content {
 #chat-modal .chat-input .material-icons {
     margin-left: 15px;
     cursor: pointer;
-}
+} */
 
 .chat-message {
     display: flex;
