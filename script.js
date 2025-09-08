@@ -48,7 +48,7 @@ if (closeBtns) {
 }
 
 if (chatModal) {
-    window.addEventListener('click', (e) => {
+    chatModal.addEventListener('click', (e) => {
         if (e.target == chatModal) {
             chatModal.classList.add('hidden');
         }
