@@ -123,7 +123,6 @@ function getBotResponse(message) {
 
 if (chatSendBtn) {
     const sendMessage = () => {
-        console.log('sendMessage called');
         const message = chatInput.value.trim();
         if (message) {
             addMessage(message, 'user');
@@ -135,13 +134,8 @@ if (chatSendBtn) {
         }
     };
 
-    chatSendBtn.addEventListener('click', (e) => {
-        console.log('chatSendBtn clicked');
-        // Visual feedback for debugging
-        chatSendBtn.style.backgroundColor = 'red';
-        setTimeout(() => {
-            chatSendBtn.style.backgroundColor = ''; // Revert to original color
-        }, 200);
+    chatSendBtn.addEventListener('touchstart', (e) => {
+        e.preventDefault(); // Prevent the browser from firing a click event as well
         sendMessage();
     });
 
